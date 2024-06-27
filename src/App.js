@@ -4,6 +4,7 @@ import 'antd/dist/reset.css';
 import Register from './components/Register';
 import Login from './components/Login';
 import Home from './components/Home';
+import Course from './components/Course';
 
 function App() {
   const user = JSON.parse(localStorage.getItem('user'));
@@ -13,6 +14,7 @@ function App() {
       <div>
         <Routes>
           <Route path="/register" element={<Register />} />
+          <Route path="/course" element={<Course />} />
           <Route path="/login" element={<Login />} />
           {user && <Route path="/home" element={<Home user={user} />} />}
           <Route path="*" element={<Login />} />
