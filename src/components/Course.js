@@ -4,6 +4,7 @@ import { Layout, Menu, Table, Button, Modal, Form, Input, Typography, message, I
 import { PlusOutlined, BookOutlined } from '@ant-design/icons';
 import moment from 'moment';
 
+// 校验 git 版本更新
 const { Header, Content, Footer, Sider } = Layout;
 const { Title } = Typography;
 
