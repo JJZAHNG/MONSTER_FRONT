@@ -1,42 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -45,8 +6,28 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+.app {
+  text-align: center;
+}
+
+.app-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .app-logo {
+    animation: app-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes app-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .header {
@@ -66,4 +47,62 @@ code {
   margin: 16px 24px 16px 0;
   float: left;
   background: rgba(255, 255, 255, 0.2);
+}
+
+.ant-card-hoverable {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.ant-card-hoverable:hover {
+  transform: scale(1.05);
+}
+
+.ant-avatar {
+  margin-bottom: 16px;
+}
+
+.ant-list-item-meta-title a {
+  color: #1890ff;
+}
+
+.ant-layout-header {
+  background-color: #001529;
+}
+
+.ant-layout-footer {
+  text-align: center;
+}
+
+.ant-card {
+  border-radius: 8px;
+}
+
+.ant-btn-primary {
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+
+.ant-btn-primary:hover {
+  background-color: #40a9ff;
+  border-color: #40a9ff;
+}
+
+.ant-menu-item-selected {
+  background-color: #1890ff !important;
+}
+
+.ant-list-item {
+  padding: 16px 24px;
+  background-color: #f9f9f9;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+.ant-list-item:hover {
+  background-color: #e6f7ff;
+}
+
+.ant-switch-checked {
+  background-color: #1890ff;
 }
